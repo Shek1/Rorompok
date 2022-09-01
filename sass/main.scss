@@ -1,0 +1,19 @@
+@font-face {
+  font-family: "Noto Sans";
+  src: url("../fonts/NotoSans-Regular.eot");
+  src: url("../fonts/NotoSans-Regular.eot?#iefix") format("embedded-opentype"),
+    url("../fonts/NotoSans-Regular.svg#NeonOneRegular") format("svg"),
+    url("../fonts/NotoSans-Regular.ttf") format("truetype"),
+    url("../fonts/NotoSans-Regular.woff") format("woff"),
+    url("../fonts/NotoSans-Regular.woff2") format("woff2");
+  font-weight: normal;
+  font-style: normal;
+}
+@import "./utils/_general";
+@import "./components/_header";
+@import "./components/_hero";
+@import "./components/advantages";
+@import "./components/_example";
+@import "./components/_catalog";
+@import "./components/_discount";
+@import "./components/_footer";
