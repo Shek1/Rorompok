@@ -1,9 +1,14 @@
 .example {
   height: 586px;
-  background-image: url(../../images/example.jpg);
-  background-position: right;
-  background-repeat: no-repeat;
+  @media screen and (min-width: 768px) {
+    background-image: url(../images/example.jpg);
+    background-position: right;
+    background-repeat: no-repeat;
+  }
   &__title {
+    @media screen and (max-width: 767px) {
+      text-align: center;
+    }
     margin-bottom: 48px;
     font-family: "Noto Sans";
     font-style: normal;
@@ -40,6 +45,9 @@
     /* or 175% */
 
     color: #686161;
+    @media screen and (max-width: 767px) {
+      width: 95vw;
+    }
   }
   &__price {
     font-family: "Noto Sans";
@@ -57,6 +65,12 @@
     background: #fbfbfb;
     border-radius: 8px;
     margin-top: 100px;
+    transition: background-color 250ms linear, box-shadow 250ms linear;
+    &:hover,
+    &:focus {
+      background-color: #f7f7f7;
+      box-shadow: inset 0px 0px 8px #b8b8b8;
+    }
   }
   &__container {
     background-color: #fff;

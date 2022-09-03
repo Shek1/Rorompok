@@ -11,28 +11,43 @@
 
 <body>
     <!-- --------------------------------------------HEADER-------------------------------------------------------- -->
-    <header class="header">
-        <a href="#" class="header__logo">Roromp<span class="header__logo--color">ok</span></a>
-        <ul class="header__nav">
-            <li class="header__item">Beranda</li>
-            <li class="header__item">Produk</li>
-            <li class="header__item">Inspirasi</li>
-        </ul>
-        <svg width="32px" height="32px">
-            <use href="./images/symbol-defs.svg#icon-basket"></use>
-        </svg>
-    </header>
-    <!-- ---------------------------------------------HERO--------------------------------------------------------- -->
-    <section class="hero">
-        <h1 class="hero__title">Buat Suasana Rumah
-            Senyaman Imajinasimu</h1>
-        <h2 class="hero__subtitle">Hidupkan suasana ruanganmu dengan berbagai produk dan koleksi pilihan furniture
-            tebaik!
-            Temukan furniture idamanmu sekarang</h2>
-        <img class="hero__img" src="./images/hero.jpg" alt="">
-    </section>
+    <div class="hero__background">
+        <header class="header container">
+            <a href="#" class="header__logo">Roromp<span class="header__logo--color">ok</span></a>
+            <div class="header__menu" data-menu>
+                <ul class="header__nav">
+                    <li class="header__item"><a class="header__link" href="#">Beranda</a></li>
+                    <li class="header__item"><a class="header__link" href="#Produk">Produk</a></li>
+                    <li class="header__item"><a class="header__link" href="#Inspirasi">Inspirasi</a></li>
+                </ul>
+            </div>
+            <button class="header__menu-button" data-menu-button>
+                <svg class="header__icon" width="32px" height="32px">
+                    <use href="./images/symbol-defs.svg#icon-menu"></use>
+                </svg>
+            </button>
+            <button class="header__button">
+                <svg width="32px" height="32px">
+                    <use href="./images/symbol-defs.svg#icon-basket"></use>
+                </svg>
+            </button>
+        </header>
+        <!-- ---------------------------------------------HERO--------------------------------------------------------- -->
+        <section class="hero container">
+            <h1 class="hero__title">Buat Suasana Rumah
+                Senyaman <span class="hero__title hero__title--index">Imajinasimu</span>
+                <svg class="hero__outline">
+                    <use href="./images/symbol-defs.svg#icon-outline"></use>
+                </svg>
+            </h1>
+
+            <h2 class="hero__subtitle">Hidupkan suasana ruanganmu dengan berbagai produk dan koleksi pilihan furniture
+                tebaik!
+                Temukan furniture idamanmu sekarang</h2>
+        </section>
+    </div>
     <!-- ---------------------------------------------ADVANTAGES--------------------------------------------------- -->
-    <section class="advantages">
+    <section class="advantages container">
         <ul class="advantages__list">
             <li class="advantages__item">
                 <div class="advantages__container">
@@ -73,24 +88,27 @@
         </ul>
     </section>
     <!-- --------------------------------------------EXAMPLE------------------------------------------------------- -->
-    <section class="example">
-        <h2 class="example__title">Koleksi Furniture <br>
-            Untuk Inpirasi Ruanganmu</h2>
-        <h3 class="example__subtitle">Stocksund Inspiration Fullset</h3>
-        <p class="example__paragraph">Berikut ini adalah sebuah desain ruang tv keluarga yang digunakan untuk berkumpul
-            dan bersantai.
-            Sofa STOCKSUND menawarkan banyak ruang sehingga setiap anggota keluarga dan tamu
-            mendapatkan tempat duduk. Sofa ini sangat nyaman dan dapat bertahan hingga bertahun-tahun</p>
-        <p class="example__price">Rp. 12.780.000</p>
-        <a class="example__link" href="#">
-            <div class="example__container">
-                <img class="example__img" src="./images/sofa1.jpg" alt="">
-            </div>
-            <h3 class="example__subtitle link__title">Stocksund Sofa</h3>
-        </a>
+    <section class="example" id="Inspirasi">
+        <div class="container">
+            <h2 class="example__title">Koleksi Furniture <br>
+                Untuk Inpirasi Ruanganmu</h2>
+            <h3 class="example__subtitle">Stocksund Inspiration Fullset</h3>
+            <p class="example__paragraph">Berikut ini adalah sebuah desain ruang tv keluarga yang digunakan untuk
+                berkumpul
+                dan bersantai.
+                Sofa STOCKSUND menawarkan banyak ruang sehingga setiap anggota keluarga dan tamu
+                mendapatkan tempat duduk. Sofa ini sangat nyaman dan dapat bertahan hingga bertahun-tahun</p>
+            <p class="example__price">Rp. 12.780.000</p>
+            <a class="example__link" href="#">
+                <div class="example__container">
+                    <img class="example__img" src="./images/sofa1.jpg" alt="">
+                </div>
+                <h3 class="example__subtitle link__title">Stocksund Sofa</h3>
+            </a>
+        </div>
     </section>
     <!-- ---------------------------------------------CATALOG------------------------------------------------------ -->
-    <section class="catalog">
+    <section class="catalog container" id="Produk">
         <h2 class="catalog__title">Produk Katalog</h2>
         <ul class="catalog__filter">
             <li class="catalog__filter-item"><button class="catalog__filter-button">Meja</button></li>
@@ -102,45 +120,55 @@
         </ul>
         <ul class="catalog__list">
             <li class="catalog__item">
-                <div class="catalog__container">
+                <a href="#" class="catalog__container">
                     <img class="catalog__img" src="./images/table1.png" alt="">
-                </div>
+                    <div class="catalog__information-container catalog__information-container--discount">
+                        <p class="catalog__paragraph">Diskon 10%</p>
+                    </div>
+                </a>
                 <h3 class="catalog__product-title">Arkelstrop</h3>
                 <p class="catalog__price">Rp. 2.699.100</p>
+                <p class="catalog__price--discount">Rp. 2.999.000</p>
             </li>
             <li class="catalog__item">
-                <div class="catalog__container">
+                <a href="#" class="catalog__container">
                     <img class="catalog__img" src="./images/table2.png" alt="">
-                </div>
+                    <div class="catalog__information-container catalog__information-container--new">
+                        <p class="catalog__paragraph">Produk Baru</p>
+                    </div>
+                </a>
                 <h3 class="catalog__product-title">Lillasen</h3>
                 <p class="catalog__price">Rp. 2.499.000</p>
             </li>
             <li class="catalog__item">
-                <div class="catalog__container">
+                <a href="#" class="catalog__container">
                     <img class="catalog__img" src="./images/table3.png" alt="">
-                </div>
+                    <div class="catalog__information-container catalog__information-container--new">
+                        <p class="catalog__paragraph">Produk Baru</p>
+                    </div>
+                </a>
                 <h3 class="catalog__product-title">Micke</h3>
                 <p class="catalog__price">Rp. 999.000</p>
             </li>
             <li class="catalog__item">
-                <div class="catalog__container">
+                <a href="#" class="catalog__container">
                     <img class="catalog__img" src="./images/table4.png" alt="">
-                </div>
+                </a>
                 <h3 class="catalog__product-title">Tilslag</h3>
                 <p class="catalog__price">Rp. 1.499.000</p>
             </li>
             </li>
             <li class="catalog__item">
-                <div class="catalog__container">
+                <a href="#" class="catalog__container">
                     <img class="catalog__img" src="./images/table5.png" alt="">
-                </div>
+                </a>
                 <h3 class="catalog__product-title">Lagkapten/Adils</h3>
                 <p class="catalog__price">Rp. 849.000</p>
             </li>
             <li class="catalog__item">
-                <div class="catalog__container">
+                <a href="#" class="catalog__container">
                     <img class="catalog__img" src="./images/table6.png" alt="">
-                </div>
+                </a>
                 <h3 class="catalog__product-title">Adils/Linmon</h3>
                 <p class="catalog__price">Rp. 499.000</p>
             </li>
@@ -149,8 +177,6 @@
     </section>
     <!-- ----------------------------------------------DISCOUNT---------------------------------------------------- -->
     <section class="discount">
-        <div class="discount__img"></div>
-        <!-- <img class="discount__img" src="./images/discount.jpg" alt=""> -->
         <div class="discount__container">
             <h2 class="discount__title">Dapatkan Potongan Harga 30% <br>
                 Untuk Pembelian Pertama</h2>
@@ -159,13 +185,14 @@
         </div>
     </section>
     <!-- ----------------------------------------------FOOTER------------------------------------------------------ -->
-    <footer class="footer">
+    <footer class="footer container">
         <p class="footer__copyright">2020 © All Right Reserved</p>
         <ul class="footer__list">
             <li class="footer__item"><a class="footer__link" href="">About Us</a></li>
             <li class="footer__item"><a class="footer__link" href="">Contact</a></li>
         </ul>
     </footer>
+    <script src="./js/mobile-menu.js"></script>
 </body>
 
 </html>

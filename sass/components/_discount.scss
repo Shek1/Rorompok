@@ -3,29 +3,37 @@
   flex-wrap: wrap;
   align-items: center;
   padding-top: 120px;
-  &__img {
-    width: 632px;
-    height: 402px;
+  @media screen and (min-width: 768px) {
     background: linear-gradient(
-        270deg,
-        #ffffff 12.81%,
-        rgba(255, 255, 255, 0) 89.37%
-      ),
-      url(../../images/discount.jpg);
+          270deg,
+          #ffffff 12.81%,
+          rgba(255, 255, 255, 0) 89.37%
+        )
+        bottom left/632px 402px no-repeat,
+      url(../images/discount.jpg) no-repeat left bottom;
   }
+  height: 402px;
+  // &__img {
+  //   width: 632px;
+
+  // }
   &__container {
-    margin-left: 40px;
+    margin-left: auto;
+    margin-right: calc(100vw / 6.5753424657534246575342465753425);
+    @media screen and (max-width: 767px) {
+      margin-right: auto;
+    }
   }
   &__title {
-    // width: 551px;
-    // height: 100px;
     margin-bottom: 8px;
     font-family: "Noto Sans";
     font-style: normal;
     font-weight: 600;
     font-size: 36px;
+    @media screen and (max-width: 767px) {
+      font-size: 27px;
+    }
     line-height: 50px;
-    /* or 139% */
 
     color: #2e2a2a;
   }
@@ -48,10 +56,16 @@
     font-weight: 500;
     font-size: 16px;
     line-height: 22px;
-    /* identical to box height */
+    cursor: pointer;
 
     color: #ffffff;
     background: #f08c00;
     border-radius: 4px;
+    transition: background-color 250ms linear, box-shadow 250ms linear;
+    &:hover,
+    &:focus {
+      background: #e98800;
+      box-shadow: inset 0px 0px 10px #af6600;
+    }
   }
 }

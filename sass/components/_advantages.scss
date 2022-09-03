@@ -2,13 +2,23 @@
   padding: 120px 0 120px;
   &__list {
     display: flex;
+    @media screen and (max-width: 937px) {
+      flex-wrap: wrap;
+      justify-content: center;
+    }
   }
   &__item {
     display: flex;
+    @media screen and (max-width: 937px) {
+      justify-content: center;
+      margin-bottom: 40px;
+    }
     flex-wrap: wrap;
     width: 378px;
-    &:not(:last-child) {
-      margin-right: 43px;
+    @media screen and (min-width: 1440px) {
+      &:not(:last-child) {
+        margin-right: 43px;
+      }
     }
   }
   &__container {

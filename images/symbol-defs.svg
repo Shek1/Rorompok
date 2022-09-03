@@ -1,5 +1,11 @@
 <svg aria-hidden="true" style="position: absolute; width: 0; height: 0; overflow: hidden;" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
 <defs>
+<symbol id="icon-heck" viewBox="0 0 32 32">
+<path fill="#fff" style="fill: var(--color1, #fff)" d="M13.333 20.229l12.256-12.257 1.887 1.885-14.143 14.143-8.485-8.485 1.885-1.885 6.6 6.6z"></path>
+</symbol>
+<symbol id="icon-outline" viewBox="0 0 133 32">
+<path fill="none" stroke="#f08c00" style="stroke: var(--color2, #f08c00)" stroke-linejoin="miter" stroke-linecap="butt" stroke-miterlimit="4" stroke-width="1.9794" d="M0.66 9.402c23.588-9.567 121.732-13.856 130.474 4.454s-96.495 20.289-120.247 12.701"></path>
+</symbol>
 <symbol id="icon-truck" viewBox="0 0 32 32">
 <path fill="#fff" style="fill: var(--color1, #fff)" d="M22.667 10.667h4l4 5.408v7.925h-2.713c-0.159 1.112-0.713 2.13-1.562 2.867s-1.935 1.142-3.058 1.142-2.209-0.405-3.058-1.142c-0.849-0.736-1.403-1.754-1.562-2.867h-6.76c-0.159 1.112-0.713 2.13-1.562 2.867s-1.935 1.142-3.058 1.142-2.21-0.405-3.058-1.142c-0.849-0.736-1.403-1.754-1.562-2.867h-1.38v-16c0-0.354 0.14-0.693 0.391-0.943s0.589-0.391 0.943-0.391h18.667c0.354 0 0.693 0.14 0.943 0.391s0.391 0.589 0.391 0.943v2.667zM22.667 13.333v4h5.333v-0.38l-2.677-3.62h-2.656z"></path>
 </symbol>
