@@ -60,6 +60,7 @@
   }
   &__list {
     width: 100vw;
+    max-width: 1260px;
     display: flex;
     flex-wrap: wrap;
     margin: 0 -20px -59px -20px;
